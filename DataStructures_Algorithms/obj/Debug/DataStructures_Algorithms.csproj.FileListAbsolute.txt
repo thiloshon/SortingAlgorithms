@@ -1,0 +1,54 @@
+c:\Users\mabdel\Documents\Visual Studio 2015\Projects\SIT221\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+c:\Users\mabdel\Documents\Visual Studio 2015\Projects\SIT221\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+c:\Users\mabdel\Documents\Visual Studio 2015\Projects\SIT221\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.csprojResolveAssemblyReference.cache
+c:\Users\mabdel\Documents\Visual Studio 2015\Projects\SIT221\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+c:\Users\mabdel\Documents\Visual Studio 2015\Projects\SIT221\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 1 (template)\Practical Task 1 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 1 (template)\Practical Task 1 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 1 (template)\Practical Task 1 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.csprojResolveAssemblyReference.cache
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 1 (template)\Practical Task 1 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 1 (template)\Practical Task 1 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.csprojResolveAssemblyReference.cache
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (solution and checker)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (solution and checker)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (solution and checker)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.csprojResolveAssemblyReference.cache
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (solution and checker)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 2 (solution and checker)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (solution and checker)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (solution and checker)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (solution and checker)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.csprojResolveAssemblyReference.cache
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (solution and checker)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (solution and checker)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.csprojResolveAssemblyReference.cache
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Practical Task 3 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221 Lecture Notes\Practical Task 3 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221 Lecture Notes\Practical Task 3 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221 Lecture Notes\Practical Task 3 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.csprojResolveAssemblyReference.cache
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221 Lecture Notes\Practical Task 3 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\SIT221 Lecture Notes\Practical Task 3 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Programming Project 1 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+\\homes.deakin.edu.au\sergeyp\UserData\Desktop\Programming Project 1 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.dll
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\DataStructures_Algorithms.pdb
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\mscorlib.dll
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\normidna.nlp
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\normnfc.nlp
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\normnfd.nlp
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\normnfkc.nlp
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\bin\Debug\normnfkd.nlp
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.dll
+C:\Users\Thiloshon\Downloads\DAA_PROJECT1\proggramming project 1\Programming Project 1 (template)\DataStructures_Algorithms\obj\Debug\DataStructures_Algorithms.pdb
