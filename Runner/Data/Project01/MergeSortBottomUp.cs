@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructures_Algorithms.Week03;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace Runner.Data.Project01
 {
-    class MergeSortBottomUp
+    public class MergeSortBottomUp : ISorter
     {
-        void Sort<T>(T[] array, IComparer<T> comparer)
+        private Random random = new Random();
+
+        public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
         {
+            if (comparer == null) comparer = Comparer<T>.Default;
+
             int n = array.Length;
             T[] src = array; // alias for the original
             T[] dest = (T[])new T[n]; // make a new temporary array
@@ -39,7 +44,7 @@ namespace Runner.Data.Project01
             int z = start; // index into output
 
             while (x < end1 && y < end2)
-                if (comp.compare(inArray[x], inArray[y]) < 0)
+                if (comp.Compare(inArray[x], inArray[y]) < 0)
                     outArray[z++] = inArray[x++]; // take next from run 1
                 else
                     outArray[z++] = inArray[y++]; // take next from run 2

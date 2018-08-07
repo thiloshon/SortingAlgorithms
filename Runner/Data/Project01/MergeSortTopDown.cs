@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructures_Algorithms.Week03;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace Runner.Data.Project01
 {
-    class MergeSortTopDown
+    public class MergeSortTopDown : ISorter
     {
-        void Sort<T>(T[] array, IComparer<T> comparer)
+        private Random random = new Random();
+
+        public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
         {
+            if (comparer == null) comparer = Comparer<T>.Default;
+
             int n = array.Length;
             if (n < 2) return;
 
@@ -26,11 +31,12 @@ namespace Runner.Data.Project01
 
         private void Merge<T>(T[] leftArray, T[] rightArray, T[] array, IComparer<T> comparer)
         {
-            int i, j = 0;
+            int i = 0; 
+             int   j = 0;
 
             while (i + j < array.Length)
             {
-                if (j == rightArray.Length || (i < leftArray.Length && comparer.compare(leftArray[i], rightArray[j]) < 0))
+                if (j == rightArray.Length || (i < leftArray.Length && comparer.Compare(leftArray[i], rightArray[j]) < 0))
                     array[i + j] = leftArray[i++];
                 else
                     array[i + j] = rightArray[j++];

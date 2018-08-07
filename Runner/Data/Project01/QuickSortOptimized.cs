@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructures_Algorithms.Week03;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,13 @@ using System.Threading.Tasks;
 
 namespace Runner.Data.Project01
 {
-    class QuickSortOptimized
+    public class QuickSortOptimized : ISorter
     {
+        private Random random = new Random();
 
-        void Sort<T>(T[] array, IComparer<T> comparer)
+        public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
         {
-            quickSortIterative(array, 0, array.Length);
+            quickSortIterative(array, 0, array.Length -1, comparer);
         }
 
 
@@ -19,8 +21,8 @@ namespace Runner.Data.Project01
         /* A[] --> Array to be sorted, 
     l --> Starting index, 
     h --> Ending index */
-        static void quickSortIterative(int[] arr,
-                                     int l, int h)
+        static void quickSortIterative<T>(T[] arr,
+                                     int l, int h, IComparer<T> comparer)
         {
             // Create an auxiliary stack
             int[] stack = new int[h - l + 1];
@@ -44,7 +46,7 @@ namespace Runner.Data.Project01
                 // Set pivot element at its 
                 // correct position in 
                 // sorted array
-                int p = partition(arr, l, h);
+                int p = partition(arr, l, h, comparer);
 
                 // If there are elements on 
                 // left side of pivot, then
@@ -73,11 +75,11 @@ namespace Runner.Data.Project01
     smaller (smaller than pivot) to left of
     pivot and all greater elements to right
     of pivot */
-        static int partition(int[] arr, int low,
-                                       int high)
+        static int partition<T>(T[] arr, int low,
+                                       int high, IComparer<T> comparer)
         {
-            int temp;
-            int pivot = arr[high];
+            T temp;
+            T pivot = arr[high];
 
             // index of smaller element
             int i = (low - 1);
@@ -85,7 +87,7 @@ namespace Runner.Data.Project01
             {
                 // If current element is smaller
                 // than or equal to pivot
-                if (arr[j] <= pivot)
+                if (comparer.Compare(arr[j], pivot) <= 0)
                 {
                     i++;
 
@@ -104,11 +106,6 @@ namespace Runner.Data.Project01
             arr[high] = temp;
 
             return i + 1;
-        }
-
-
-        
-
+        }     
     }
-
 }

@@ -1,5 +1,7 @@
 ﻿using DataStructures_Algorithms.Utils;
 using DataStructures_Algorithms.Week01;
+using DataStructures_Algorithms.Week03;
+using Runner.Data.Project01;
 using System;
 using System.Diagnostics;
 
@@ -24,8 +26,8 @@ namespace Runner
             for (int i = 0; i < problem_size; i++) data[i]=k.Next(10000);
 
             // print out array
-            //Console.WriteLine("Initial data:");
-            //Console.WriteLine(data);
+            Console.WriteLine("Initial data:");
+            Console.WriteLine(data);
 
             // ------------------ Default Sort ----------------------------------
             Console.WriteLine("\n::We are running Default Sort");
@@ -162,7 +164,7 @@ namespace Runner
 
             // ------------------ MergeSortTopDown ----------------------------------
             Console.WriteLine("\n::We are running MergeSortTopDown");
-            //vector.Sorter = new MergeSortTopDown(); // uncomment, change to MergeSortTopDown
+            vector.Sorter = new MergeSortTopDown(); // uncomment, change to MergeSortTopDown
 
             Console.WriteLine("After sort in assending order:");
             vector.Clear();
@@ -170,6 +172,7 @@ namespace Runner
             s.Restart();
 
             // Sort the vector here in ascending order with MergeSortTopDown
+            vector.Sort(new IntAscendingComparer());
 
             s.Stop();
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
@@ -181,6 +184,7 @@ namespace Runner
             s.Restart();
 
             // Sort the vector here in descending order with MergeSortTopDown
+            vector.Sort(new IntDescendingComparer());
 
             s.Stop();
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
@@ -188,7 +192,7 @@ namespace Runner
 
             // ------------------ MergeSortTopDown ----------------------------------
             Console.WriteLine("\n::We are running MergeSortBottomUp");
-            //vector.Sorter = new MergeSortBottomUp(); // uncomment, change to MergeSortBottomUp
+            vector.Sorter = new MergeSortBottomUp(); // uncomment, change to MergeSortBottomUp
 
             Console.WriteLine("After sort in assending order:");
             vector.Clear();
@@ -196,6 +200,7 @@ namespace Runner
             s.Restart();
 
             // Sort the vector here in ascending order with MergeSortBottomUp
+            vector.Sort(new IntAscendingComparer());
 
             s.Stop();
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
@@ -207,6 +212,7 @@ namespace Runner
             s.Restart();
 
             // Sort the vector here in descending order with MergeSortBottomUp
+            vector.Sort(new IntDescendingComparer());
 
             s.Stop();
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
@@ -214,7 +220,7 @@ namespace Runner
 
             // ------------------ QuickSortOptimized ----------------------------------
             Console.WriteLine("\n::We are running QuickSortOptimized");
-            //vector.Sorter = new QuickSortOptimized(); // uncomment, change to QuickSortOptimized
+            vector.Sorter = new QuickSortOptimized(); // uncomment, change to QuickSortOptimized
 
             Console.WriteLine("After sort in assending order:");
             vector.Clear();
@@ -222,10 +228,11 @@ namespace Runner
             s.Restart();
 
             // Sort the vector here in ascending order with QuickSortOptimized
+            vector.Sort(new IntAscendingComparer());
 
             s.Stop();
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
-            //Console.WriteLine(vector);
+            Console.WriteLine(vector);
 
             Console.WriteLine("After sort in descending order:");
             vector.Clear();
@@ -233,10 +240,11 @@ namespace Runner
             s.Restart();
 
             // Sort the vector here in descending order with QuickSortOptimized
+            vector.Sort(new IntDescendingComparer());
 
             s.Stop();
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
-            //Console.WriteLine(vector);
+            Console.WriteLine(vector);
 
             Console.ReadLine();
         }
