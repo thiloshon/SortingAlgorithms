@@ -11,7 +11,7 @@ namespace Runner
         static void Main(string[] args)
         {
             //Note: this need to be updated every week
-            new RunnerPr01_01().Run(args);
+            new RunnerPr01_02().Run(args);
         }
     }
 }

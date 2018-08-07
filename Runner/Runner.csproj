@@ -43,10 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Project01\Customer.cs" />
     <Compile Include="Data\Project01\MergeSortBottomUp.cs" />
     <Compile Include="Data\Project01\MergeSortTopDown.cs" />
     <Compile Include="Data\Project01\MinDequesNumber_Generator.cs" />
     <Compile Include="Data\Project01\QuickSortOptimized.cs" />
+    <Compile Include="Data\Project01\SortingOrder.cs" />
     <Compile Include="Data\Project01\SortingOrder_Generator.cs" />
     <Compile Include="RunnerPr01_01.cs" />
     <Compile Include="RunnerPr01_02.cs" />

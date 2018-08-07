@@ -244,7 +244,7 @@ namespace Runner
 
             s.Stop();
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
-            Console.WriteLine(vector);
+            //Console.WriteLine(vector);
 
             Console.ReadLine();
         }

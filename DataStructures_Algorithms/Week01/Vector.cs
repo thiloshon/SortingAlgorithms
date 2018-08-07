@@ -208,51 +208,53 @@ namespace DataStructures_Algorithms.Week01
 
 
 
-        //public T Min(int k)
-        //{
-        //    return quickselect(data, 0, data.Length - 1, k - 1);
-        //}
+        public T Min(int k)
+        {
+            return quickselect(data, 0, data.Length - 1, k - 1);
+        }
 
-        //private T quickselect(T[] G, int first, int last, int k)
-        //{
-        //    if (first <= last)
-        //    {
-        //        int pivot = partition(G, first, last);
-        //        if (pivot == k)
-        //        {
-        //            return G[k];
-        //        }
-        //        if (pivot > k)
-        //        {
-        //            return quickselect(G, first, pivot - 1, k);
-        //        }
-        //        return quickselect(G, pivot + 1, last, k);
-        //    }
-        //    return Integer.MIN_VALUE;
-        //}
+        private T quickselect(T[] G, int first, int last, int k)
+        {
+            if (first <= last)
+            {
+                int pivot = partition(G, first, last);
+                if (pivot == k)
+                {
+                    return G[k];
+                }
+                if (pivot > k)
+                {
+                    return quickselect(G, first, pivot - 1, k);
+                }
+                return quickselect(G, pivot + 1, last, k);
+            }
+            return default(T);
+        }
 
-        //private int partition(T[] G, int first, int last)
-        //{
-        //    int pivot = first + new Random().Next(last - first + 1);
-        //    swap(G, last, pivot);
-        //    for (int i = first; i < last; i++)
-        //    {
-        //        if (G[i] > G[last])
-        //        {
-        //            swap(G, i, first);
-        //            first++;
-        //        }
-        //    }
-        //    swap(G, first, last);
-        //    return first;
-        //}
+        private int partition(T[] G, int first, int last)
+        {
+            IComparer<T> comparer = Comparer<T>.Default;
 
-        //private void swap(T[] G, int x, int y)
-        //{
-        //    T tmp = G[x];
-        //    G[x] = G[y];
-        //    G[y] = tmp;
-        //}
+            int pivot = first + new Random().Next(last - first + 1);
+            swap(G, last, pivot);
+            for (int i = first; i < last; i++)
+            {
+                if (comparer.Compare(G[i], G[last]) < 0)
+                {
+                    swap(G, i, first);
+                    first++;
+                }
+            }
+            swap(G, first, last);
+            return first;
+        }
+
+        private void swap(T[] G, int x, int y)
+        {
+            T tmp = G[x];
+            G[x] = G[y];
+            G[y] = tmp;
+        }
 
     }
 }
