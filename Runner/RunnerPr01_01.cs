@@ -1,7 +1,7 @@
 ﻿using DataStructures_Algorithms.Utils;
 using DataStructures_Algorithms.Week01;
 using DataStructures_Algorithms.Week03;
-using Runner.Data.Project01;
+using DataStructures_Algorithms.Project01;
 using System;
 using System.Diagnostics;
 
@@ -27,7 +27,7 @@ namespace Runner
 
             // print out array
             Console.WriteLine("Initial data:");
-            Console.WriteLine(data);
+            //Console.WriteLine(data);
 
             // ------------------ Default Sort ----------------------------------
             Console.WriteLine("\n::We are running Default Sort");
@@ -162,6 +162,9 @@ namespace Runner
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
             //Console.WriteLine(vector);
 
+
+
+
             // ------------------ MergeSortTopDown ----------------------------------
             Console.WriteLine("\n::We are running MergeSortTopDown");
             vector.Sorter = new MergeSortTopDown(); // uncomment, change to MergeSortTopDown
@@ -232,7 +235,7 @@ namespace Runner
 
             s.Stop();
             Console.WriteLine("Sorting Time: " + s.ElapsedMilliseconds);
-            Console.WriteLine(vector);
+            //Console.WriteLine(vector);
 
             Console.WriteLine("After sort in descending order:");
             vector.Clear();
