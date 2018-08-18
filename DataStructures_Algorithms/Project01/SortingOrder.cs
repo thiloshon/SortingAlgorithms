@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 
 namespace DataStructures_Algorithms.Project01
 {
+    /// <summary>
+    /// Class to find sorted order of tuple (name[i], age[i], weight[i]).
+    /// </summary>
     public class SortingOrder
     {
+        /// <summary>
+        /// Find sorted order of tuple (name[i], age[i], weight[i]).
+        /// </summary>
+        /// <param name="name">Array denoting name.</param>
+        /// <param name="age">Array denoting age.</param>
+        /// <param name="weight">Array denoting weight.</param>
+        /// <returns>The sorted order. One of "NAW", "NWA", "ANW", "AWN", "WAN", "WNA"</returns>
         public string Solve(string[] name, int[] age, int[] weight)
         {
             // Creating customer objects to mimic inplace sorting for the
@@ -54,6 +64,10 @@ namespace DataStructures_Algorithms.Project01
         }
     }
 
+    /// <summary>
+    /// Internal class to store customer details.
+    /// Helps in sorting the (name[i], age[i], weight[i]) tuple.
+    /// </summary>
     public class Customer
     {
         public string name { get; set; }

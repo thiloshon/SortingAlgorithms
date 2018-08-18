@@ -7,10 +7,18 @@ using System.Threading.Tasks;
 
 namespace DataStructures_Algorithms.Project01
 {
+    /// <summary>
+    /// Class to sort array with merge sort bottom up method.
+    /// </summary>
     public class MergeSortBottomUp : ISorter
     {
-        private Random random = new Random();
-
+        /// <summary>
+        /// Sorts the generic array using the comparer passed in stacks.
+        /// Decreasing or increasing order is governed by the comparer.
+        /// </summary>
+        /// <typeparam name="T">Generic array is passed but should be an implementation of IComparable interface.</typeparam>
+        /// <param name="array">The array to be sorted. A generic array.</param>
+        /// <param name="comparer">The comparer object to use in sorting. If null is passed, default comparer will be created.</param>
         public void Sort<T>(T[] array, IComparer<T> comparer) where T : IComparable<T>
         {
             if (comparer == null) comparer = Comparer<T>.Default;
@@ -23,7 +31,7 @@ namespace DataStructures_Algorithms.Project01
             for (int i = 1; i < n; i *= 2) // each iteration sorts all runs of length i
             {
                 for (int j = 0; j < n; j += 2 * i) // each pass merges two runs of length i
-                    merge(src, dest, comparer, j, i);
+                    Merge(src, dest, comparer, j, i);
 
                 temp = src; // reverse roles of the arrays
                 src = dest;
@@ -33,7 +41,16 @@ namespace DataStructures_Algorithms.Project01
                 Array.Copy(src, 0, array, 0, n); // additional copy to get result to original
         }
 
-        private void merge<T>(T[] inArray, T[] outArray, IComparer<T> comp, int start, int inc)
+        /// <summary>
+        /// Merges in[start..start+inc−1] and in[start+inc..start+2*inc−1] into out.
+        /// </summary>
+        /// <typeparam name="T">Generic array is passed.</typeparam>
+        /// <param name="inArray">The source array</param>
+        /// <param name="outArray">The destination array</param>
+        /// <param name="comp">Comparer object to compare elements.</param>
+        /// <param name="start">Start intex</param>
+        /// <param name="inc">End index</param>
+        private void Merge<T>(T[] inArray, T[] outArray, IComparer<T> comp, int start, int inc)
         {
             int end1 = Math.Min(start + inc, inArray.Length); // boundary for run 1
             int end2 = Math.Min(start + 2 * inc, inArray.Length);  // boundary for run 2

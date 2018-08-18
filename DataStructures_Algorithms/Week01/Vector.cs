@@ -207,36 +207,53 @@ namespace DataStructures_Algorithms.Week01
         }
 
 
-
+        /// <summary>
+        /// Searches for the kth smallest element in the entire unsorted Vector
+        /// </summary>
+        /// <param name="k">Rank to find</param>
+        /// <returns>kth smallest element in a sequence</returns>
         public T Min(int k)
         {
             return quickselect(data, 0, data.Length - 1, k - 1);
         }
 
+        /// <summary>
+        /// Internal method to find kth element resursively.
+        /// </summary>
+        /// <param name="G">Array to find</param>
+        /// <param name="first">Index of first element</param>
+        /// <param name="last">Index of last element</param>
+        /// <param name="k">Rank to find</param>
+        /// <returns>kth smallest element</returns>
         private T quickselect(T[] G, int first, int last, int k)
         {
             if (first <= last)
             {
                 int pivot = partition(G, first, last);
-                if (pivot == k)
-                {
-                    return G[k];
-                }
-                if (pivot > k)
-                {
-                    return quickselect(G, first, pivot - 1, k);
-                }
+
+                if (pivot == k) return G[k];
+                if (pivot > k) return quickselect(G, first, pivot - 1, k);                
                 return quickselect(G, pivot + 1, last, k);
             }
+
+            // Returns value which is default for the type T.
             return default(T);
         }
 
+        /// <summary>
+        /// Internal method to partition array.
+        /// </summary>
+        /// <param name="G">Array to partition</param>
+        /// <param name="first">Index of first element</param>
+        /// <param name="last">Index of last element</param>
+        /// <returns>Pivot point</returns>
         private int partition(T[] G, int first, int last)
         {
             IComparer<T> comparer = Comparer<T>.Default;
 
             int pivot = first + new Random().Next(last - first + 1);
             swap(G, last, pivot);
+
             for (int i = first; i < last; i++)
             {
                 if (comparer.Compare(G[i], G[last]) < 0)
@@ -245,10 +262,17 @@ namespace DataStructures_Algorithms.Week01
                     first++;
                 }
             }
+
             swap(G, first, last);
             return first;
         }
 
+        /// <summary>
+        /// Internal method to swap element.
+        /// </summary>
+        /// <param name="G"></param>
+        /// <param name="x"></param>
+        /// <param name="y"></param>
         private void swap(T[] G, int x, int y)
         {
             T tmp = G[x];
